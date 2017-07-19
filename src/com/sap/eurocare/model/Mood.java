@@ -13,12 +13,23 @@ public class Mood {
 	
 	@Column
 	private long moodLevel;
+	
+	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+	private java.sql.Date date;
 
-	public long getUser() {
+	public java.sql.Date getDate() {
+		return date;
+	}
+
+	public void setDate(java.sql.Date date) {
+		this.date = date;
+	}
+
+	public long getUserId() {
 		return userId;
 	}
 
-	public void setUser(long userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
