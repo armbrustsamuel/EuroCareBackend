@@ -29,7 +29,8 @@ You can clone it locally and then import for Eclipse or import directly in Eclip
 ### Run the following steps:
 - Maven clean & install
 
-### Create a new Java Web server when running application - use as default for tests
+### Create a server
+Create a new Java Web server when running application - use as default for tests
 
 ## Testing the service - change * by the following URIs:
 You can test it locally via http://localhost:8080/EuroCareBackend/rest/*
@@ -39,4 +40,5 @@ You can test it locally via http://localhost:8080/EuroCareBackend/rest/*
 
 I like to use the POSTMAN application in Chrome to make the tests - Use what you thinks better.
 
-## Deploy will be done in the future at SAP Cloud Platform
+## Deploy 
+It will be done in the future at SAP Cloud Platform
