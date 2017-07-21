@@ -18,7 +18,7 @@ public class User {
 	@Column
 	private String gender;
 	
-	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+	@Column
 	private java.sql.Date date;
 
 	public long getUserId() {
@@ -45,11 +45,11 @@ public class User {
 		this.gender = gender;
 	}
 
-	public java.sql.Date getDate() {
+	public java.sql.Date getBirthDate() {
 		return date;
 	}
 
-	public void setDate(java.sql.Date date) {
+	public void setBirthDate(java.sql.Date date) {
 		this.date = date;
 	}
 

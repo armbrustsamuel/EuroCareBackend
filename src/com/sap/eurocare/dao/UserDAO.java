@@ -10,7 +10,6 @@ import javax.persistence.criteria.CriteriaQuery;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sap.eurocare.model.Event;
 import com.sap.eurocare.model.User;
 
 @Repository

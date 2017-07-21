@@ -41,6 +41,7 @@ public class PersistenceJPAConfig {
 		properties.setProperty("eclipselink.ddl-generation", "create-tables");
 		properties.setProperty("eclipselink.weaving", "false");
 		properties.setProperty("eclipselink.ddl-generation.output-mode", "both");
+		properties.setProperty("eclipselink.logging.level", "SEVERE");
 
 		em.setJpaProperties(properties);
 
