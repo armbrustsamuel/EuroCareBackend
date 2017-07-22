@@ -10,7 +10,6 @@ import javax.persistence.criteria.CriteriaQuery;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.sap.eurocare.model.Doctor;
-import com.sap.eurocare.model.User;
 
 public class DoctorDAO {
 	

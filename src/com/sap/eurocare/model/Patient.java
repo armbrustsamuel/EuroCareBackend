@@ -12,6 +12,18 @@ public class Patient {
 	@GeneratedValue
 	private long userId;
 	
+	@Column(nullable = false)
+	private String name;
+	
+	@Column
+	private String gender;
+	
+	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+	private java.sql.Date birthDate;
+	
+	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+	private java.sql.Date diagnosalDate;
+	
 	public long getUserId() {
 		return userId;
 	}
@@ -36,21 +48,20 @@ public class Patient {
 		this.gender = gender;
 	}
 
-	public java.sql.Date getDate() {
-		return date;
+	public java.sql.Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setDate(java.sql.Date date) {
-		this.date = date;
+	public void setBirthDate(java.sql.Date birthDate) {
+		this.birthDate = birthDate;
 	}
 
-	@Column(nullable = false)
-	private String name;
-	
-	@Column
-	private String gender;
-	
-	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
-	private java.sql.Date date;
-	
+	public java.sql.Date getDiagnosalDate() {
+		return diagnosalDate;
+	}
+
+	public void setDiagnosalDate(java.sql.Date diagnosalDate) {
+		this.diagnosalDate = diagnosalDate;
+	}
+
 }
