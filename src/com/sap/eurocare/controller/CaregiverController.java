@@ -44,4 +44,10 @@ public class CaregiverController {
 		caregiverDao.deleteCaregiver(id);
 	}
 	
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+	@ResponseStatus(HttpStatus.OK)
+	public @ResponseBody Caregiver updateCaregiver(@PathVariable long id, @RequestBody Caregiver caregiver) {
+		return caregiverDao.updateCaregiver(id, caregiver);
+	}
+
 }
