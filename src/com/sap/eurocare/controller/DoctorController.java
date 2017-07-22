@@ -43,11 +43,5 @@ public class DoctorController {
 	public @ResponseBody void delete(@PathVariable long id) {
 		doctorDao.deleteDoctor(id);
 	}
-	
-	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-	@ResponseStatus(HttpStatus.OK)
-	public @ResponseBody Doctor updateUser(@PathVariable long id, @RequestBody Doctor doctor) {
-		return doctorDao.updateDoctor(id, doctor);
-	}
 
 }

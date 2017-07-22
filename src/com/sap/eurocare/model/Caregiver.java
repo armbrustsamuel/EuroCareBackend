@@ -18,6 +18,12 @@ public class Caregiver {
 	@Column
 	private String gender;
 	
+	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+	private java.sql.Date birthDate;
+	
+	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
+	private java.sql.Date registrationDate;
+	
 	public long getUserId() {
 		return userId;
 	}
@@ -49,12 +55,6 @@ public class Caregiver {
 	public void setBirthDate(java.sql.Date birthDate) {
 		this.birthDate = birthDate;
 	}
-
-	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
-	private java.sql.Date birthDate;
-	
-	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
-	private java.sql.Date registrationDate;
 	
 	public java.sql.Date getRegistrationDate() {
 		return registrationDate;
