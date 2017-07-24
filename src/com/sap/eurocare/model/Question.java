@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class DoctorAnswer {
+public class Question {
 	
 	@Id
 	private long id;
@@ -14,7 +14,7 @@ public class DoctorAnswer {
 	private long userId;
 	
 	@Column
-	private long questionId;
+	private long answerId;
 	
 	@Column
 	private String message;
@@ -40,12 +40,12 @@ public class DoctorAnswer {
 		this.userId = userId;
 	}
 	
-	public long getQuestionId() {
-		return questionId;
+	public long getAnswerId() {
+		return answerId;
 	}
 
-	public void setQuestionId(long questionId) {
-		this.questionId = questionId;
+	public void setAnswerId(long answerId) {
+		this.answerId = answerId;
 	}
 
 
