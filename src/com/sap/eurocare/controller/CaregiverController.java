@@ -13,14 +13,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.sap.eurocare.dao.CaregiverDAO;
-import com.sap.eurocare.dao.EventDAO;
-import com.sap.eurocare.dao.UserDAO;
 import com.sap.eurocare.model.Caregiver;
-import com.sap.eurocare.model.Event;
-import com.sap.eurocare.model.User;
 
 @Controller
-@RequestMapping("/careGiver")
+@RequestMapping("/caregiver")
 public class CaregiverController {
 
 	@Autowired

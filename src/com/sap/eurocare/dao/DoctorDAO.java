@@ -7,11 +7,12 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.sap.eurocare.model.Doctor;
-import com.sap.eurocare.model.User;
 
+@Repository
 public class DoctorDAO {
 	
 	@PersistenceContext
