@@ -17,6 +17,9 @@ public class Task {
 	
 	@Column(nullable = false)
 	private boolean done = false;
+	
+	@Column(nullable = false)
+	private String time;
 
 	public long getId() {
 		return id;
@@ -40,6 +43,14 @@ public class Task {
 
 	public void setDone(boolean done) {
 		this.done = done;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
 	}
 	
 }

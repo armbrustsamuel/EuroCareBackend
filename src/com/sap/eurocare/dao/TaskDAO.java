@@ -55,6 +55,7 @@ public class TaskDAO {
 		
 		task.setName(newTask.getName());
 		task.setDone(newTask.isDone());
+		task.setTime(newTask.getTime());
 		
 		em.merge(task);
 		return task;
