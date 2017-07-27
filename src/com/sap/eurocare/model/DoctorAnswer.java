@@ -18,9 +18,7 @@ public class DoctorAnswer {
 	
 	@Column
 	private String message;
-	
-	
-	
+
 	/*@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
 	private java.sql.Date date;
 */

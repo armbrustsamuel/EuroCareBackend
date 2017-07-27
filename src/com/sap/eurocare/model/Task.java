@@ -20,6 +20,18 @@ public class Task {
 	
 	@Column(nullable = false)
 	private String time;
+	
+	//"occurrence": string(7)
+	@Column
+	private String occurence;
+
+	public String getOccurence() {
+		return occurence;
+	}
+
+	public void setOccurence(String occurence) {
+		this.occurence = occurence;
+	}
 
 	public long getId() {
 		return id;

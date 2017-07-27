@@ -61,6 +61,8 @@ public class QuestionDAO {
 		Question question = getQuestionById(id);
 		
 		question.setMessage(newQuestion.getMessage());
+		question.setDone(newQuestion.isDone());
+		question.setUserId(newQuestion.getUserId());
 		
 		
 		em.merge(question);

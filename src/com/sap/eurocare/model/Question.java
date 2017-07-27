@@ -19,7 +19,16 @@ public class Question {
 	@Column
 	private String message;
 	
+	@Column 
+	private boolean done;
 	
+	public boolean isDone() {
+		return done;
+	}
+
+	public void setDone(boolean done) {
+		this.done = done;
+	}
 	
 	/*@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
 	private java.sql.Date date;

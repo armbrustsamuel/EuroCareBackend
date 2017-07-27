@@ -60,7 +60,7 @@ public class DoctorAnswerDAO {
 		DoctorAnswer doctorAnswer = getDoctorAnswerById(id);
 		
 		doctorAnswer.setMessage(newDoctorAnswer.getMessage());
-		
+		doctorAnswer.setUserId(newDoctorAnswer.getUserId());
 		
 		em.merge(doctorAnswer);
 		return doctorAnswer;
