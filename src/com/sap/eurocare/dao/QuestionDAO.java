@@ -43,18 +43,15 @@ public class QuestionDAO {
 		em.persist(question);
 		return question;
 	}
-	
-	//Is this function really useful to our system?
-	/*
-	@Transactional
-	public void deleteDoctorAnswer(long id) {
-		DoctorAnswer doctorAnswer = getDoctorAnswerById(id);
 
-		if (doctorAnswer != null) {
-			em.remove(doctorAnswer);
+	@Transactional
+	public void deleteQuestion(long id) {
+		Question question = getQuestionById(id);
+
+		if (question != null) {
+			em.remove(question);
 		}
 	}
-	*/
 	
 	@Transactional
 	public Question updateQuestion(long id, Question newQuestion){

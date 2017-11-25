@@ -57,6 +57,7 @@ public class PatientDAO {
 		patient.setGender(newPatient.getGender());
 		patient.setBirthDate(newPatient.getBirthDate());
 		patient.setDiagnosalDate(newPatient.getDiagnosalDate());
+		patient.setUnstable(newPatient.isUnstable());
 		
 		em.merge(patient);
 		return patient;

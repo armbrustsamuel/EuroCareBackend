@@ -18,6 +18,9 @@ public class Patient {
 	@Column
 	private String gender;
 	
+	@Column
+	private boolean unstable;
+	
 	@Column(columnDefinition = "DATE DEFAULT CURRENT_DATE")
 	private java.sql.Date birthDate;
 	
@@ -63,5 +66,14 @@ public class Patient {
 	public void setDiagnosalDate(java.sql.Date diagnosalDate) {
 		this.diagnosalDate = diagnosalDate;
 	}
+	
+	public boolean isUnstable() {
+		return unstable;
+	}
+
+	public void setUnstable(boolean unstable) {
+		this.unstable = unstable;
+	}
+
 
 }
